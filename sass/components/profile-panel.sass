@@ -1,0 +1,41 @@
+@import '../variables'
+
+.profile-panel
+
+    &__list
+        gap: $gutter
+        list-style: none
+        align-items: center
+        padding: 0
+        margin: 0
+        display: flex
+
+    &__link
+        transition: $base-time
+        font-size: $base-size * 1.2
+        color: $dark
+
+        &:hover
+            color: $darker
+
+    &__avatar
+        position: relative
+
+        background: $accent
+        border-radius: 50%
+        transition: $base-time
+
+        .profile-panel__link
+            text-align: center
+            width: 35px
+            height: 35px
+            display: block
+            line-height: 35px
+            color: $darker
+
+        &:hover
+            background: $light
+
+            .dropdown
+                display: block
+            

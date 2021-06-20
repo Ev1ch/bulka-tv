@@ -1,0 +1,37 @@
+@import '../variables'
+    
+.dropdown
+    background: #fff
+    overflow: hidden
+    width: 150px
+    border-radius: $base-radius
+    box-shadow: 0 0 5px rgba(0,0,0,0.1)
+    position: absolute
+    display: none
+    top: 100%
+    right: 0
+
+    &__icon
+        margin-right: 10px
+
+    &__list
+        list-style: none
+        padding: 0
+
+    &__item
+
+        &:hover
+            background: $light
+
+        &--accent
+            border-top: 1px solid $light
+
+    &__link        
+        display: block
+        text-decoration: none
+        color: $darker        
+        padding: 10px 15px
+        font-size: $base-size
+
+        &--logout
+            color: #ff0000

@@ -1,0 +1,60 @@
+@import '../variables'
+
+.search-box
+    flex-basis: 30%
+    min-width: 300px
+    gap: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__field
+        flex: 1
+        overflow: hidden
+        display: flex
+        align-items: stretch
+
+    &__input        
+        width: 100%
+        border: 1px solid $light
+        border-radius: $base-radius 0 0 $base-radius
+        outline: none
+        padding: 5px 10px
+        color: $dark
+
+    &__input:focus
+        border: 1px solid $dark
+
+    &__input:focus + .search-box__button
+        border: 1px solid $dark
+        border-left: none
+
+    &__input,
+    &__button
+        font-size: $base-size * 1.2
+        transition: border $base-time
+
+    &__button
+        color: $darker
+        background: $light
+        border: 1px solid $light
+        border-left: none
+        border-radius: 0 $base-radius $base-radius 0
+
+        &:hover
+            cursor: pointer
+
+        &:active
+            box-shadow: 0 0 2px rgba($darker, 0.5) inset
+
+    &__voice
+        font-size: $base-size * 1.2
+        transition: $base-time
+        border-radius: 0
+        border: 0
+        background: none
+        color: $dark
+
+    &__voice:hover
+        cursor: pointer
+        color: $darker
