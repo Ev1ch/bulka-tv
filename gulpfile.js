@@ -13,7 +13,7 @@ const defaults = {
 
 gulp.task('sass', () => {
     return gulp
-        .src(defaults.sassSource + '*.sass')
+        .src(defaults.sassSource + '**/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(
             autoprefixer(
@@ -50,7 +50,7 @@ gulp.task('reload', () => {
 gulp.task(
     'watch',
     gulp.parallel('serve', () => {
-        gulp.watch(defaults.sassSource + '*.sass').on(
+        gulp.watch(defaults.sassSource + '**/*.sass').on(
             'change',
             gulp.parallel('sass', 'reload'),
         );
