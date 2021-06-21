@@ -1,6 +1,0 @@
-.container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 300px auto;
-  grid-template-rows: 70px calc(100vh - 70px);
-  grid-template-areas: 'header header' 'aside main'; }
