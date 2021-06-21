@@ -51,3 +51,5 @@ Thumbs.db
 # VS Code files
 .vscode
 
+# CSS temp files
+css
