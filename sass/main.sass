@@ -1,3 +1,13 @@
 @import './base'
 
 @import './parts/header'
+
+.header
+    grid-area: header
+
+.container
+    height: 100vh
+    display: grid
+    grid-template-columns: 300px auto
+    grid-template-rows: fit-content(30px) auto
+    grid-template-areas: 'header header' 'aside main'

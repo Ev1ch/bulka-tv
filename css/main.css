@@ -153,12 +153,18 @@
   padding: 10px 20px;
   -webkit-box-shadow: 0 0 5px rgba(44, 44, 44, 0.5);
           box-shadow: 0 0 5px rgba(44, 44, 44, 0.5);
-  position: sticky;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  top: 0;
-  left: 0;
-  right: 0; }
+          justify-content: space-between; }
   .header__logo {
     height: 50px; }
+
+.header {
+  grid-area: header; }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: fit-content(30px) auto;
+  grid-template-areas: 'header header' 'aside main'; }
