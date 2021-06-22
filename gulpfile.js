@@ -34,7 +34,7 @@ gulp.task('sass', () => {
 
 gulp.task(
     'serve',
-    gulp.parallel('sass', () => {
+    gulp.series('sass', () => {
         browserSync.init({
             server: {
                 baseDir: defaults.htmlSource,
@@ -52,11 +52,11 @@ gulp.task(
     gulp.parallel('serve', () => {
         gulp.watch(defaults.sassSource + '**/*.sass').on(
             'change',
-            gulp.parallel('sass', 'reload'),
+            gulp.series('sass', 'reload'),
         );
         gulp.watch(defaults.htmlSource + '*.html').on(
             'change',
-            gulp.parallel('reload'),
+            gulp.series('reload'),
         );
     }),
 );
