@@ -50,19 +50,32 @@
                 top: 10px
 
     &__overlay
-        display: flex
+        display: none
         align-items: center
         justify-content: center
         position: absolute
         opacity: 0
-        transition: $base-time
+        animation: fadeIn $base-time forwards
         top: 0
         left: 0
         right: 0
         bottom: 0
         background: rgba($darker, 0.5)
 
+        @keyframes fadeIn
+            0%
+                opacity: 0
+            100%
+                opacity: 1
+
     &__play
         color: #fff
         font-size: 40px
         text-decoration: none
+        animation: spinIn $base-time 1
+
+        @keyframes spinIn
+            0%
+                transform: scale(0.3) rotate(-180deg)
+            100%
+                transform: scale(1) rotate(0)
