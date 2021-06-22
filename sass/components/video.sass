@@ -17,28 +17,4 @@
 
     &--active
 
-        .video-preview
-
-            &::before
-                content: 'Live'
-                text-transform: uppercase
-                background: #f00
-                font-size: $base-size * 0.8
-                color: #fff
-                padding: 5px
-                display: block
-                border-radius: $base-radius
-                z-index: 1
-                position: absolute
-                top: 10px
-                left: 10px
-                animation: jump $base-time * 1.5 infinite
-            
-            @keyframes jump
-                0%
-                    top: 10px
-                50%
-                    top: 15px
-                100%
-                    top: 10px
-                
+           
