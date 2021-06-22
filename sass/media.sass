@@ -1,0 +1,30 @@
+@import './variables'
+
+@media screen and (max-width: 1200px)
+    .container
+        grid-template-columns: 90px calc(100vw - 90px)
+
+    .information-block,
+    .streamer-list__status,
+    .streamer-list__nick
+        display: none
+
+    .streamer-list
+        height: 100%
+
+
+@media screen and (max-width: 468px)
+    .container
+        grid-template-rows: 120px calc(100vh - 120px)
+
+    .header
+        gap: $gutter / 2
+        justify-content: center
+
+    .videos
+        grid-template-columns: 100%
+
+
+@media screen and (max-width: 410px)
+    .container
+        grid-template-rows: 180px calc(100vh - 180px)
