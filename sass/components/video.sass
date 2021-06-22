@@ -1,0 +1,43 @@
+@import '../variables'
+
+@import './video-preview'
+@import './video-footer'
+
+.video
+    position: relative
+    transition: $base-time
+
+    &:hover
+        box-shadow: 0 0 3px rgba($darker, 0.2)
+
+        .video-preview
+
+            &__overlay
+                opacity: 1
+
+    &--active
+
+        .video-preview
+
+            &::before
+                content: 'Live'
+                text-transform: uppercase
+                background: #f00
+                color: #fff
+                padding: 5px
+                display: block
+                border-radius: $base-radius
+                z-index: 1
+                position: absolute
+                top: 10px
+                left: 10px
+                animation: jump $base-time * 1.5 infinite
+            
+            @keyframes jump
+                0%
+                    top: 10px
+                50%
+                    top: 15px
+                100%
+                    top: 10px
+                
