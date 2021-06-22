@@ -3,3 +3,18 @@
 *
     box-sizing: border-box
     font-family: $base-font
+
+::-webkit-scrollbar
+    width: 10px
+    height: 10px
+
+::-webkit-scrollbar-track
+    background: $light
+
+::-webkit-scrollbar-thumb
+    background: $dark
+    border-radius: $base-radius
+
+    &:hover
+        background: darken($dark, 10%)
+
