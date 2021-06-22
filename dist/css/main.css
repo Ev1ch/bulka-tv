@@ -1,0 +1,10 @@
+@import url('./base.css');
+@import url('./animations.css');
+
+@import url('./parts/header.css');
+@import url('./parts/container.css');
+@import url('./parts/aside.css');
+@import url('./parts/main.css');
+@import url('./parts/footer.css');
+
+@import url('./media.css');

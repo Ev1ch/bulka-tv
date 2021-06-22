@@ -1,0 +1,20 @@
+@import url('./video-footer.css');
+@import url('./video-footer.css');
+@import url('./video-preview.css');
+
+.video {
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.video:hover {
+    -webkit-box-shadow: 0 0 3px rgba(44, 44, 44, 0.2);
+    box-shadow: 0 0 3px rgba(44, 44, 44, 0.2);
+}
+
+.video:hover .video-preview__overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

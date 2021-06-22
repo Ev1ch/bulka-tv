@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bulka TV</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__logo logo">
+                    <img src="img/cat.png" alt="Bulka TV" class="logo__image" />
+                </div>
+                <div class="header__search-box search-box">
+                    <div class="search-box__field">
+                        <input type="text" class="search-box__input" placeholder="Search" />
+                        <button class="search-box__button">
+                            <i class="fas fa-search search-box__icon"></i>
+                        </button>
+                    </div>
+                    <button class="search-box__voice">
+                        <i class="fas fa-microphone search-box__icon"></i>
+                    </button>
+                </div>
+                <div class="header__profile-panel profile-panel">
+                    <ul class="profile-panel__list">
+                        <li class="profile-panel__item">
+                            <a href="#" class="profile-panel__link"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="profile-panel__avatar">
+                            <a href="#" class="profile-panel__link">
+                                <i class="fas fa-paw"></i>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <i class="fas fa-paw dropdown__icon"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <i class="fas fa-cog dropdown__icon"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--accent">
+                                        <a href="#" class="dropdown__link dropdown__link--logout">
+                                            <i class="fas fa-sign-out-alt dropdown__icon"></i> Log out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <aside class="aside">
+                <div class="streamers">
+                    <div class="streamer streamer--active">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="ChuChu" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                ChuChu
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer streamer--active">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="Coco" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                CoCo
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer streamer--active">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="LaLa" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                LaLa
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="MoMo" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                MoMo
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer streamer--active">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="TT" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                TT
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="NaNa" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                NaNa
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer streamer--active">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="ToTo" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                ToTo
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                    <div class="streamer">
+                        <span class="streamer__profile">
+                            <img class="streamer__avatar" alt="DoDo" src="img/cat.png" />
+                            <span class="streamer__nick">
+                                DoDo
+                            </span>
+                        </span>
+                        <div class="streamer__status">
+                            <span class="streamer__subs">
+                                5.3K
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="information-block">
+                    <div class="information-block__content">
+                        <p class="information-block__text">
+                            Join the Bulka's community!
+                        </p>
+                        <div class="information-block__social">
+                            <a class="information-block__link information-block__link--telegram" href="#">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a class="information-block__link information-block__link--instagram" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="information-block__link information-block__link--facebook" href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main">
+                <div class="categories">
+                    <ul class="categories__list">
+                        <li class="category category--active">
+                            <a href="#" class="category__link">
+                                All
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Food
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Music
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Humans
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Games
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Cumputers
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Comedies
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Apartaments
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Politics
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Travelling
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Fashion
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Cooking
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Funny
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Sadness
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Live
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Hobbies
+                            </a>
+                        </li>
+                        <li class="category">
+                            <a href="#" class="category__link">
+                                Games
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="videos">
+                    <div class="video video--active">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="Where have all the cats gone?" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                71.1K viewers
+                            </span>
+                            <a href="#" class="video-preview__live">
+                                Live
+                            </a>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" src="img/cat.png" alt="ChuChu">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    Where have all the cats gone?
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    ChuChu
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="I went on a summer picnick" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                34:56
+                            </span>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" src="img/cat.png" alt="Momo">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    I went on a summer picnick
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    Momo
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video video--active">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="Testing new Uber" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                25.1K viewers
+                            </span>
+                            <a href="#" class="video-preview__live">
+                                Live
+                            </a>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" src="img/cat.png" alt="LaLa">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    Testing new Uber
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    LaLa
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="I'll pee in your shoes" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                30:30
+                            </span>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" alt="TT" src="img/cat.png">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    I'll pee in your shoes
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    TT
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video video--active">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="Hello?" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                9.1K viewers
+                            </span>
+                            <a href="#" class="video-preview__live">
+                                Live
+                            </a>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" alt="ToTo" src="img/cat.png">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    Hello?
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    ToTo
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="New obstacle course" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                13:10
+                            </span>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" src="img/cat.png" alt="NaNa">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    New obstacle course
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    NaNa
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video video--active">
+                        <div class="video-preview">
+                            <div class="video-preview__overlay">
+                                <a href="#" class="video-preview__play">
+                                    <i class="fas fa-paw"></i>
+                                </a>
+                            </div>
+                            <img src="img/cat.png" alt="Watching Star Wars" class="video-preview__shot">
+                            <span class="video-preview__info">
+                                200.1K viewers
+                            </span>
+                            <a href="#" class="video-preview__live">
+                                Live
+                            </a>
+                        </div>
+                        <div class="video-footer">
+                            <a href="#">
+                                <img class="video-footer__avatar" src="img/cat.png" alt="CoCo">
+                            </a>
+                            <div class="video-footer__description">
+                                <a href="#" class="video-footer__title">
+                                    Watching Star Wars
+                                </a>
+                                <a href="#" class="video-footer__author">
+                                    CoCo
+                                </a>
+                            </div>
+                            <button class="video-footer__menu">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <span class="footer__copyright">
+                        Inspired by Kittisaurus <i class="fab fa-youtube"></i>
+                    </span>
+                </footer>
+            </main>
+        </div>
+    </body>
+
+</html>

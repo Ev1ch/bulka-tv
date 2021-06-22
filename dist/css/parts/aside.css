@@ -1,0 +1,7 @@
+@import url('../components/streamer.css');
+@import url('../components/streamers.css');
+@import url('../components/information-block.css');
+
+.aside {
+    background: #e9e9e9;
+}

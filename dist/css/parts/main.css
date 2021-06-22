@@ -1,0 +1,11 @@
+@import url('../components/category.css');
+@import url('../components/categories.css');
+@import url('../components/video-footer.css');
+@import url('../components/video-preview.css');
+@import url('../components/video.css');
+@import url('../components/videos.css');
+
+.main {
+    overflow-y: auto;
+    padding: 20px;
+}

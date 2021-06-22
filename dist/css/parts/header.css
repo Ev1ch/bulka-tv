@@ -1,0 +1,29 @@
+@import url('../components/search-box.css');
+@import url('../components/logo.css');
+@import url('../components/profile-panel.css');
+@import url('../components/dropdown.css');
+
+.header {
+    background: #fff;
+    grid-area: header;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0 0 5px rgba(44, 44, 44, 0.5);
+    box-shadow: 0 0 5px rgba(44, 44, 44, 0.5);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 50px;
+}
