@@ -1,0 +1,39 @@
+@import '../variables'
+    
+.categories
+    overflow-x: auto
+
+    &__list 
+        height: 70px
+        padding: 0
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        gap: $gutter / 2
+        list-style: none
+        margin: 0
+
+    &__item
+        border-radius: 20px
+        transition: $base-time
+        border: 1px solid $dark
+        background: $light
+
+        &--active
+            background: $accent
+            border: none
+
+            .categories__link
+                color: #fff
+
+        &:hover
+            background: $dark
+    
+    &__link
+        padding: 5px 10px
+        white-space: nowrap
+        display: block
+        font-family: $base-font
+        font-size: $base-size
+        text-decoration: none
+        color: $darker
