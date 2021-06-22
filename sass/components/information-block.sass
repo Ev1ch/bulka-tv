@@ -1,0 +1,41 @@
+@import '../variables'
+    
+.information-block
+    display: flex
+    border-top: 1px solid #fff
+    height: 182px
+    text-align: center
+    border-radius: $base-radius
+    padding: $gutter
+
+    &__content
+        margin: auto
+        padding: 20px
+        background: lighten($light, 5%)
+
+    &__text
+        margin: 0
+        font-size: 1.5 * $base-size
+        margin-bottom: 20px
+        color: $darker
+
+    &__link 
+        color: $darker
+        font-size: 24px
+        margin: 0 10px
+        transition: $base-time
+
+        &--telegram
+
+            &:hover
+                color: #0088cc
+
+        &--instagram
+
+            &:hover
+                color: #bc1888
+
+        &--facebook
+
+            &:hover
+                color: #4267B2

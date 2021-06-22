@@ -1,0 +1,69 @@
+@import '../variables'
+    
+.streamer-list
+    height: calc(100% - 182px)
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    padding: $gutter 0
+    gap: $gutter
+
+    &__item
+        transition: $base-time
+        color: $darker
+        padding: $gutter / 2 $gutter
+        display: flex
+        gap: 15px
+        font-size: $base-size
+        align-items: center
+        width: 100%
+
+        &:hover
+            background: $dark
+
+        &--active
+
+            .streamer-list__status
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: calc(50% - 5px)
+                    right: calc(100% + 5px)
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+                    background: #ff0000
+                    animation: pulse $base-time * 2 infinite
+
+    &__avatar
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        object-fit: cover
+
+    &__status
+        max-width: calc(40% - 30px)
+        position: relative
+        margin-left: auto
+
+    &__subs
+        display: block
+        overflow: hidden
+        text-overflow: ellipsis
+
+    &__profile
+        max-width: 60%
+        gap: 10px
+        display: flex
+        align-items: center
+
+    &__nick
+        text-overflow: ellipsis
+        overflow: hidden
+
+@keyframes pulse
+    0%
+        opacity: 1
+    100%
+        opacity: 0
