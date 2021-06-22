@@ -1,5 +1,7 @@
 @import '../variables'
     
+@import './category'
+
 .categories
     overflow-x: auto
 
@@ -12,27 +14,3 @@
         gap: $gutter / 2
         list-style: none
         margin: 0
-
-    &__item
-        border-radius: 20px
-        transition: $base-time
-        border: 1px solid $dark
-        background: $light
-
-        &--active
-            background: $accent
-            border: none
-
-            .categories__link
-                color: #fff
-
-        &:hover
-            background: $dark
-    
-    &__link
-        font-size: $base-size
-        padding: 5px 10px
-        white-space: nowrap
-        display: block
-        text-decoration: none
-        color: $darker
