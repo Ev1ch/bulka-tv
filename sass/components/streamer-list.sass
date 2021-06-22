@@ -1,5 +1,6 @@
 @import '../variables'
-    
+@import '../animations'
+
 .streamer-list
     height: calc(100% - 182px)
     overflow-y: auto
@@ -26,6 +27,7 @@
             .streamer-list__status
 
                 &::before
+                    z-index: 1
                     content: ''
                     position: absolute
                     top: calc(50% - 5px)
@@ -33,8 +35,19 @@
                     width: 10px
                     height: 10px
                     border-radius: 50%
-                    background: #ff0000
-                    animation: pulse $base-time * 2 infinite
+                    background: #f00
+                    animation: pulseIn $base-time * 2 $base-time infinite
+
+                &::after
+                    content: ''
+                    position: absolute
+                    top: calc(50% - 7.5px)
+                    right: calc(100% + 2.5px)
+                    width: 15px
+                    height: 15px
+                    border-radius: 50%
+                    background: #f00
+                    animation: pulseOut $base-time * 2 infinite
 
     &__avatar
         cursor: pointer
@@ -70,9 +83,3 @@
 
         &:hover
             color: $hover-blue
-
-@keyframes pulse
-    0%
-        opacity: 1
-    100%
-        opacity: 0

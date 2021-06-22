@@ -1,4 +1,5 @@
 @import '../variables'
+@import '../animations'
 
 .video-preview
     position: relative
@@ -41,14 +42,6 @@
         &:hover
             cursor: pointer
 
-        @keyframes jump
-            0%
-                top: 10px
-            50%
-                top: 15px
-            100%
-                top: 10px
-
     &__overlay
         display: none
         align-items: center
@@ -62,20 +55,8 @@
         bottom: 0
         background: rgba($darker, 0.5)
 
-        @keyframes fadeIn
-            0%
-                opacity: 0
-            100%
-                opacity: 1
-
     &__play
         color: #fff
         font-size: 40px
         text-decoration: none
         animation: spinIn $base-time 1
-
-        @keyframes spinIn
-            0%
-                transform: scale(0.3) rotate(-180deg)
-            100%
-                transform: scale(1) rotate(0)
