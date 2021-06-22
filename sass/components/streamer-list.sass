@@ -14,22 +14,22 @@
         padding: $gutter / 2 $gutter
         display: flex
         gap: 15px
-        font-size: $base-font
+        font-size: $base-size
         align-items: center
-        flex: 1
+        width: 100%
 
         &:hover
             background: $dark
 
         &--active
 
-            .streamer-list__subs
+            .streamer-list__status
 
                 &::before
                     content: ''
                     position: absolute
                     top: calc(50% - 5px)
-                    right: 120%
+                    right: calc(100% + 5px)
                     width: 10px
                     height: 10px
                     border-radius: 50%
@@ -37,17 +37,30 @@
                     animation: pulse $base-time * 2 infinite
 
     &__avatar
-        vertical-align: middle
-        display: inline-block
-        margin-right: 10px
         border-radius: 50%
         width: 50px
         height: 50px
         object-fit: cover
 
-    &__subs
+    &__status
+        max-width: calc(40% - 30px)
         position: relative
         margin-left: auto
+
+    &__subs
+        display: block
+        overflow: hidden
+        text-overflow: ellipsis
+
+    &__profile
+        max-width: 60%
+        gap: 10px
+        display: flex
+        align-items: center
+
+    &__nick
+        text-overflow: ellipsis
+        overflow: hidden
 
 @keyframes pulse
     0%
