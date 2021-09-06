@@ -1,0 +1,271 @@
+.category {
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #cfcfcf;
+  background: #e9e9e9; }
+  .category--active {
+    background: gold;
+    border: none; }
+    .category--active .category__link {
+      color: #fff; }
+  .category:hover {
+    background: #cfcfcf; }
+  .category__link {
+    font-size: 16px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    color: #2c2c2c; }
+
+.categories {
+  overflow-x: auto; }
+  .categories__list {
+    height: 70px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0; }
+
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes scaleIn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes pulseOut {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: .5; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes pulseOut {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: .5; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes jump {
+  0% {
+    top: 10px; }
+  50% {
+    top: 15px; }
+  100% {
+    top: 10px; } }
+
+@keyframes jump {
+  0% {
+    top: 10px; }
+  50% {
+    top: 15px; }
+  100% {
+    top: 10px; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes spinIn {
+  0% {
+    -webkit-transform: scale(0.3) rotate(-180deg);
+            transform: scale(0.3) rotate(-180deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0); } }
+
+@keyframes spinIn {
+  0% {
+    -webkit-transform: scale(0.3) rotate(-180deg);
+            transform: scale(0.3) rotate(-180deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0); } }
+
+.video-preview {
+  position: relative;
+  height: 70%; }
+  .video-preview__shot {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .video-preview__info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12.8px;
+    background: rgba(44, 44, 44, 0.8);
+    color: #fff;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s; }
+    .video-preview__info:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  .video-preview__live {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f00;
+    font-size: 12.8px;
+    color: #fff;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    -webkit-animation: jump 0.75s infinite;
+            animation: jump 0.75s infinite; }
+    .video-preview__live:hover {
+      cursor: pointer; }
+  .video-preview__overlay {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation: fadeIn 0.5s forwards;
+            animation: fadeIn 0.5s forwards;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 44, 44, 0.5); }
+  .video-preview__play {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    -webkit-animation: spinIn 0.5s 1;
+            animation: spinIn 0.5s 1; }
+
+.video-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  height: 30%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .video-footer__avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block; }
+  .video-footer__description {
+    overflow: hidden;
+    color: #2c2c2c;
+    line-height: 1.5;
+    text-align: left; }
+  .video-footer__title, .video-footer__author {
+    text-decoration: none;
+    color: #2c2c2c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-family: "Roboto Mono", sans-serif; }
+    .video-footer__title:hover, .video-footer__author:hover {
+      color: #005073; }
+  .video-footer__title {
+    font-weight: bold;
+    font-size: 16px; }
+  .video-footer__author {
+    color: #cfcfcf;
+    font-size: 12.8px; }
+  .video-footer__menu {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #2c2c2c;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .video-footer__menu:hover {
+      cursor: pointer; }
+    .video-footer__menu:active {
+      color: #000; }
+
+.video {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .video:hover {
+    -webkit-box-shadow: 0 0 3px rgba(44, 44, 44, 0.2);
+            box-shadow: 0 0 3px rgba(44, 44, 44, 0.2); }
+    .video:hover .video-preview__overlay {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+.videos {
+  margin: 20px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 20px; }
+
+.main {
+  overflow-y: auto;
+  min-height: calc(100vh - 70px);
+  padding: 20px; }
