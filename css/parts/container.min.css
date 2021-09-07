@@ -1,0 +1,1 @@
+.container{height:100vh;display:grid;grid-template-columns:350px calc(100vw - 350px);grid-template-rows:70px calc(100vh - 70px);grid-template-areas:'header header' 'aside main'}
