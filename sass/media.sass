@@ -12,8 +12,10 @@
     .streamers
         height: 100%
 
-
 @media screen and (max-width: 468px)
+    .main
+        min-height: calc(100vh - 120px)
+
     .container
         grid-template-rows: 120px calc(100vh - 120px)
 
@@ -24,7 +26,9 @@
     .videos
         grid-template-columns: 100%
 
-
 @media screen and (max-width: 410px)
+    .main
+        min-height: calc(100vh - 180px)
+
     .container
         grid-template-rows: 180px calc(100vh - 180px)
