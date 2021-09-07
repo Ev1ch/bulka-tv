@@ -25,7 +25,6 @@ gulp.task('sass', () => {
                 'android 4',
             ),
         )
-        .pipe(gulp.dest(defaults.cssSource))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
         .pipe(gulp.dest(defaults.cssSource))
